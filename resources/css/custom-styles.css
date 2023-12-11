@@ -1,0 +1,189 @@
+/* variables de colores personalizadas */
+:root {
+    --color-amarillo-claro: #fcf3cf;
+    --color-verde-claro: #d5f5e3;
+    --color-azul-claro: #d4e6f1;
+    --color-rojo-claro: #fadbd8;
+    --color-plomo-claro: #b2babb;
+    --color-plomo-suave: #eaeded;
+    --color-amarillo-fuerte: #f9e79f;
+}
+
+/* color de cabeceras de tablas personalizadas */
+.tabla-cabecera-amarilla tr th {
+    background-color: var(--color-amarillo-claro);
+}
+
+/* color de cuerpo de las tablas personalizadas  */
+.tabla-cuerpo tr td {
+    background-color: #ffffff;
+}
+
+/* colores de fondo personalizados */
+.bg-verde {
+    background-color: var(--color-verde-claro);
+}
+
+.bg-azul {
+    background-color: var(--color-azul-claro);
+}
+
+.bg-rojo {
+    background-color: var(--color-rojo-claro);
+}
+
+.bg-amarillo {
+    background-color: var(--color-amarillo-claro);
+}
+
+.bg-amarillo-fuerte {
+    background-color: var(--color-amarillo-fuerte);
+}
+
+.bg-plomo {
+    background-color: var(--color-plomo-suave);
+}
+
+.bg-plomo-claro {
+    background-color: var(--color-plomo-claro);
+}
+
+.bg-azul-hover:hover {
+    background-color: var(--bs-light-primary);
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+    border-radius: 5px;
+}
+
+.bg-azul-hover:hover h6 {
+    background-color: var(--bs-light-primary);
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+    border-radius: 5px;
+}
+
+.bg-verde-active {
+    border-radius: 30px;
+    background-color: var(--bs-light-success);
+}
+
+.bg-verde-active i {
+    color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
+}
+
+.bg-verde-active h6 {
+    color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
+}
+
+.bg-verde-hover:hover {
+    border-radius: 30px;
+    background-color: var(--bs-light-success);
+}
+
+.bg-verde-hover:hover i {
+    color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
+}
+
+.bg-verde-hover:hover h6 {
+    color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
+}
+
+/* Bordes personalizados */
+.border-light-dark {
+    border: solid 1px var(--color-plomo-claro);
+}
+
+.border-start-light-dark {
+    border-left: solid 1px var(--color-plomo-claro);
+}
+
+/* Acordeon dentro de las tablas */
+.accordion-header {
+    pointer-events: none;
+}
+
+.btn-ocultar-header-accordion {
+    pointer-events: auto;
+}
+
+/* Login */
+.bg-image-bg-personas-difuminado {
+    width: 100%;
+    background-image: url("../images/backgrounds/bg-personas-difuminado.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* botones personalizados */
+.btn-plomo {
+    background-color: var(--color-plomo-claro);
+    border: solid 1px var(--color-plomo-claro);
+    color: #000000;
+}
+
+.btn-plomo:hover {
+    background-color: var(--color-plomo-claro);
+    border: solid 1px var(--color-plomo-claro);
+    color: #000000;
+}
+
+/* directorio de tiendas */
+#contenedor-directorio-tiendas {
+    height: 500px;
+    background-image: url("../images/backgrounds/fondo-azul.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 40px;
+}
+
+.container-inputs-searchs {
+    margin-top: 12%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.container-boton-tienda {
+    margin-top: 2%;
+}
+
+.img-card-anuncio {
+    width: 100%;
+}
+
+@media (max-width: 719px) {
+    .container-inputs-searchs {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container-boton-tienda {
+        margin-top: 20%;
+        margin-bottom: 30%;
+    }
+}
+
+/* swipper */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ocultar datos de la billetera */
+.datos-billetera.masked-text {
+    font-family: "mask-data", sans-serif;
+    -webkit-text-security: disc; /* Para navegadores basados en WebKit (Chrome, Safari, etc.) */
+    text-security: disc; /* Para navegadores modernos */
+}
